@@ -1,0 +1,27 @@
+<!--
+    https://jsonplaceholder.typicode.com/posts/1
+    {
+        "userId": 1,
+        "id": 1,
+        "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+        "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+    }
+-->
+
+
+
+<h2>Basic Request</h2>
+<p>Remote Server
+    <a href="https://jsonplaceholder.typicode.com/posts">https://jsonplaceholder.typicode.com/posts</a>
+    (104.18.61.242)
+</p>
+<button type="button" (click)="makeTypedRequest()">Make typed request</button>
+
+<div *ngFor="let art of fooData">
+    <h3>{{art.title}}</h3>
+    <b>post {{art.id}} di utente #: {{art.userId}}</b>
+    <div>
+        {{art.body}}
+    </div>
+    <hr>
+</div>
